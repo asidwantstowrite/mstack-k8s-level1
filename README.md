@@ -29,8 +29,10 @@ kubectl apply -f staging-ns.yaml -f redis-master-deployment.yaml -f redis-master
 
 kubectl apply -f mandatory.yaml -f nginx-ingress-service.yaml -f default-backend.yaml -f ingress-rules-staging.yaml -f ingress-rules-production.yaml
 
-# Testing Ingress. create mapping on /etc/hosts to below hosts to access the service
-NAMESPACE    NAME                 HOSTS                         ADDRESS         PORTS     AGE
-production   production-ingress   guestbook.mstakx.io           34.93.180.157   80        46m
-staging      staging-ingress      staging-guestbook.mstakx.io   34.93.180.157   80        1h
+# Testing Staging ingress. create a mapping on /etc/hosts to access the service
+staging-guestbook.mstakx.io   34.93.180.157
+
+# Testing Production ingress. create a mapping on /etc/hosts to access the service
+guestbook.mstakx.io           34.93.180.157
+
 
