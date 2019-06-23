@@ -31,7 +31,7 @@ kubectl apply -f redis-slave-deployment.yaml -f redis-slave-service.yaml
 kubectl apply -f guestbook-deployment.yaml -f guestbook-service.yaml
 
 # Creating ingress controller and ingess rules
-1) Goto ingress-nginx-controller folder and run below commands for sequentially \n
+1) Goto ingress-nginx-controller folder and run below commands for sequentially
 
 kubectl apply -f mandatory.yaml
 kubectl apply -f nginx-ingress-service.yaml
