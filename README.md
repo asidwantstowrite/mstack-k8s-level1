@@ -32,6 +32,7 @@ kubectl apply -f guestbook-deployment.yaml -f guestbook-service.yaml
 
 # Creating ingress controller and ingess rules
 1) Goto ingress-nginx-controller folder and run below commands for sequentially
+
 kubectl apply -f mandatory.yaml
 kubectl apply -f nginx-ingress-service.yaml
 kubectl apply -f default-backend.yaml
