@@ -1,5 +1,5 @@
 # mstack-k8s-level1
-1 ) create a service account with admin privileges and save the json credentials of that project
+1) create a service account with admin privileges and save the json credentials of that project
 
 2) set the variable on the local system
 export GOOGLE_APPLICATION_CREDENTIALS="/home/arshad/Desktop/mstack/mstack-level-1-801cd207f79d.json"
@@ -31,7 +31,7 @@ kubectl apply -f redis-slave-deployment.yaml -f redis-slave-service.yaml
 kubectl apply -f guestbook-deployment.yaml -f guestbook-service.yaml
 
 # Creating ingress controller and ingess rules
-1) Goto ingress-nginx-controller folder and run below commands for sequentially
+1) Goto ingress-nginx-controller folder and run below commands for sequentially \n
 
 kubectl apply -f mandatory.yaml
 kubectl apply -f nginx-ingress-service.yaml
