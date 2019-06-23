@@ -17,25 +17,15 @@ gcloud container clusters get-credentials mstack-l1 --zone=asia-south1-a
 # For staging environment
 1) Goto staging-guestbook folder and run below commands sequentially
 
-kubectl apply -f staging-ns.yaml
-kubectl apply -f redis-master-deployment.yaml -f redis-master-service.yaml
-kubectl apply -f redis-slave-deployment.yaml -f redis-slave-service.yaml
-kubectl apply -f guestbook-deployment.yaml -f guestbook-service.yaml
+kubectl apply -f staging-ns.yaml -f redis-master-deployment.yaml -f redis-master-service.yaml -f redis-slave-deployment.yaml -f redis-slave-service.yaml -f guestbook-deployment.yaml -f guestbook-service.yaml
 
 # For production environment
 1) Goto production-guestbook folder and run below commands sequentially
 
-kubectl apply -f staging-ns.yaml
-kubectl apply -f redis-master-deployment.yaml -f redis-master-service.yaml
-kubectl apply -f redis-slave-deployment.yaml -f redis-slave-service.yaml
-kubectl apply -f guestbook-deployment.yaml -f guestbook-service.yaml
+kubectl apply -f staging-ns.yaml -f redis-master-deployment.yaml -f redis-master-service.yaml -f redis-slave-deployment.yaml -f redis-slave-service.yaml -f guestbook-deployment.yaml -f guestbook-service.yaml
 
 # Creating ingress controller and ingess rules
 1) Goto ingress-nginx-controller folder and run below commands for sequentially
 
-kubectl apply -f mandatory.yaml
-kubectl apply -f nginx-ingress-service.yaml
-kubectl apply -f default-backend.yaml
-kubectl apply -f ingress-rules-staging.yaml
-kubectl apply -f ingress-rules-production.yaml
+kubectl apply -f mandatory.yaml -f nginx-ingress-service.yaml -f default-backend.yaml -f ingress-rules-staging.yaml -f ingress-rules-production.yaml
 
